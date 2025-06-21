@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
 
-## Project info
+# StreamFlix - Plataforma de Streaming
 
-**URL**: https://lovable.dev/projects/1e7b1699-81a7-4865-adc2-cdfe85817d4c
+Um website moderno inspirado na Netflix, construído com React, TypeScript e Tailwind CSS.
 
-## How can I edit this code?
+## 🚀 Deploy
 
-There are several ways of editing your application.
+### Para cPanel/Hospedagem Tradicional:
 
-**Use Lovable**
+1. **Build do projeto:**
+   ```bash
+   npm install
+   npm run build
+   ```
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1e7b1699-81a7-4865-adc2-cdfe85817d4c) and start prompting.
+2. **Upload para hospedagem:**
+   - Faça upload de **todo o conteúdo** da pasta `dist/` para a pasta `public_html` do seu cPanel
+   - Certifique-se que o arquivo `index.html` está na raiz do domínio
 
-Changes made via Lovable will be committed automatically to this repo.
+### Para Netlify/Vercel:
+- Conecte seu repositório GitHub
+- Build command: `npm run build`
+- Publish directory: `dist`
 
-**Use your preferred IDE**
+## 🛠️ Desenvolvimento Local
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Instalar dependências
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Iniciar servidor de desenvolvimento
 npm run dev
+
+# Build para produção
+npm run build
+
+# Preview do build
+npm run preview
 ```
 
-**Edit a file directly in GitHub**
+## 📁 Estrutura do Projeto
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+src/
+  ├── components/     # Componentes reutilizáveis
+  ├── pages/         # Páginas da aplicação
+  └── lib/           # Utilitários e configurações
+```
 
-**Use GitHub Codespaces**
+## 🎯 Funcionalidades
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- ✅ Design responsivo
+- ✅ Interface moderna estilo Netflix
+- ✅ Animações suaves
+- ✅ Cards de conteúdo interativos
+- ✅ Hero section dinâmica
 
-## What technologies are used for this project?
+---
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1e7b1699-81a7-4865-adc2-cdfe85817d4c) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+**URL do Projeto**: https://lovable.dev/projects/1e7b1699-81a7-4865-adc2-cdfe85817d4c

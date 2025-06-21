@@ -1,4 +1,3 @@
-
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import ContentRow from "../components/ContentRow";
@@ -324,7 +323,7 @@ const Index = () => {
                     href={link.href}
                     className="block text-cyber-cyan/70 hover:text-cyber-cyan transition-colors duration-300 text-sm tracking-wider"
                   >
-                    {'>'}> {link.name}
+                    {'>'}&gt; {link.name}
                   </a>
                 ))}
               </div>

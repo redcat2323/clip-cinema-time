@@ -324,7 +324,7 @@ const Index = () => {
                     href={link.href}
                     className="block text-cyber-cyan/70 hover:text-cyber-cyan transition-colors duration-300 text-sm tracking-wider"
                   >
-                    > {link.name}
+                    {'>'}> {link.name}
                   </a>
                 ))}
               </div>

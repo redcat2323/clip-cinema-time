@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,7 +19,27 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'orbitron': ['Orbitron', 'monospace'],
+				'rajdhani': ['Rajdhani', 'sans-serif'],
+				'electrolize': ['Electrolize', 'sans-serif'],
+			},
 			colors: {
+				// Cyberpunk palette
+				'cyber-cyan': '#00ffff',
+				'cyber-magenta': '#ff00ff',
+				'cyber-purple': '#9d00ff',
+				'cyber-green': '#00ff41',
+				'cyber-orange': '#ff6b00',
+				'cyber-blue': '#0099ff',
+				'cyber-pink': '#ff0080',
+				'cyber-black': '#000000',
+				'cyber-dark': '#0a0a0a',
+				'cyber-dark-alt': '#111111',
+				'cyber-gray': '#1a1a1a',
+				'cyber-gray-light': '#2a2a2a',
+				
+				// Shadcn compatibility
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -52,16 +73,6 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
